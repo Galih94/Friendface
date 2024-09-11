@@ -13,6 +13,7 @@
 		2A9EF3C32C9143810064BD5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A9EF3C22C9143810064BD5D /* Preview Assets.xcassets */; };
 		2A9EF3CD2C9144F00064BD5D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9EF3CC2C9144F00064BD5D /* User.swift */; };
 		2A9EF3CF2C9146440064BD5D /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9EF3CE2C9146440064BD5D /* Friend.swift */; };
+		2A9EF3D22C9148D00064BD5D /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9EF3D12C9148D00064BD5D /* NetworkHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		2A9EF3C22C9143810064BD5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A9EF3CC2C9144F00064BD5D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2A9EF3CE2C9146440064BD5D /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		2A9EF3D12C9148D00064BD5D /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		2A9EF3BA2C91437F0064BD5D /* Friendface */ = {
 			isa = PBXGroup;
 			children = (
+				2A9EF3D02C9148A00064BD5D /* Helper */,
 				2A9EF3BB2C91437F0064BD5D /* FriendfaceApp.swift */,
 				2A9EF3BD2C91437F0064BD5D /* ContentView.swift */,
 				2A9EF3C92C9144480064BD5D /* Model */,
@@ -79,6 +82,14 @@
 				2A9EF3CE2C9146440064BD5D /* Friend.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2A9EF3D02C9148A00064BD5D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2A9EF3D12C9148D00064BD5D /* NetworkHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +164,7 @@
 			files = (
 				2A9EF3BE2C91437F0064BD5D /* ContentView.swift in Sources */,
 				2A9EF3BC2C91437F0064BD5D /* FriendfaceApp.swift in Sources */,
+				2A9EF3D22C9148D00064BD5D /* NetworkHelper.swift in Sources */,
 				2A9EF3CD2C9144F00064BD5D /* User.swift in Sources */,
 				2A9EF3CF2C9146440064BD5D /* Friend.swift in Sources */,
 			);
