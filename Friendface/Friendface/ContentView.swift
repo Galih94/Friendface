@@ -11,10 +11,17 @@ struct ContentView: View {
     @State private var users: [User] = []
     var body: some View {
         List(users, id: \.id) { user in
-            Text(user.name)
+            VStack(alignment: .leading, spacing: 6) {
+                Text(user.name)
+                Text(user.isActive ? "Active" : "Not Active")
+                    .foregroundStyle(user.isActive ? .green : .red)
+                    
+            }
         }
         .task {
-            users = await NetworkHelper.loadData() ?? []
+            if users.isEmpty {
+                users = await NetworkHelper.loadData() ?? []
+            }
         }
     }
 }
