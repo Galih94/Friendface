@@ -21,7 +21,7 @@ struct ContentView: View {
                     }
                 }
                 .navigationDestination(for: User.self) { user in
-                    UserDetailView(user: user)
+                    UserDetailView(user: user, users: users)
                 }
             }
         }
