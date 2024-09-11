@@ -25,6 +25,6 @@ struct User: Codable, Hashable {
     let friends: [Friend]
     
     func getRegisteredDate() -> String? {
-        return ISO8601DateFormatter().date(from: registered)?.formatted(date: .abbreviated, time: .complete)
+        return ISO8601DateFormatter().date(from: registered)?.formatted(date: .abbreviated, time: .omitted)
     }
 }
