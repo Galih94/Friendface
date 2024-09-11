@@ -14,6 +14,7 @@
 		2A9EF3CD2C9144F00064BD5D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9EF3CC2C9144F00064BD5D /* User.swift */; };
 		2A9EF3CF2C9146440064BD5D /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9EF3CE2C9146440064BD5D /* Friend.swift */; };
 		2A9EF3D22C9148D00064BD5D /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9EF3D12C9148D00064BD5D /* NetworkHelper.swift */; };
+		2A9EF3D52C91839C0064BD5D /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9EF3D42C91839C0064BD5D /* UserDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		2A9EF3CC2C9144F00064BD5D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2A9EF3CE2C9146440064BD5D /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		2A9EF3D12C9148D00064BD5D /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		2A9EF3D42C91839C0064BD5D /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		2A9EF3BA2C91437F0064BD5D /* Friendface */ = {
 			isa = PBXGroup;
 			children = (
+				2A9EF3D32C9183850064BD5D /* View */,
 				2A9EF3D02C9148A00064BD5D /* Helper */,
 				2A9EF3BB2C91437F0064BD5D /* FriendfaceApp.swift */,
 				2A9EF3BD2C91437F0064BD5D /* ContentView.swift */,
@@ -90,6 +93,14 @@
 				2A9EF3D12C9148D00064BD5D /* NetworkHelper.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		2A9EF3D32C9183850064BD5D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A9EF3D42C91839C0064BD5D /* UserDetailView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +177,7 @@
 				2A9EF3BC2C91437F0064BD5D /* FriendfaceApp.swift in Sources */,
 				2A9EF3D22C9148D00064BD5D /* NetworkHelper.swift in Sources */,
 				2A9EF3CD2C9144F00064BD5D /* User.swift in Sources */,
+				2A9EF3D52C91839C0064BD5D /* UserDetailView.swift in Sources */,
 				2A9EF3CF2C9146440064BD5D /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

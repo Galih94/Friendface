@@ -7,7 +7,10 @@
 
 import Foundation
 
-struct Friend: Codable {
+struct Friend: Codable, Hashable {
+    static func == (lhs: Friend, rhs: Friend) -> Bool {
+        lhs.id == rhs.id
+    }
     let id: String
     let name: String
 }
