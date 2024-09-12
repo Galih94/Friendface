@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @Environment(\.modelContext) var modelContext
-    @Query var users: [User]
+    @Query(sort: [SortDescriptor(\User.name)]) var users: [User]
     var body: some View {
         NavigationStack {
             List(users, id: \.id) { user in
