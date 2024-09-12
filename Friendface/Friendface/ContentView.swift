@@ -5,10 +5,12 @@
 //  Created by Galih Samudra on 11/09/24.
 //
 
+import SwiftData
 import SwiftUI
 
 struct ContentView: View {
-    @State private var users: [User] = []
+    @Environment(\.modelContext) var modelContext
+    @Query var users: [User]
     var body: some View {
         NavigationStack {
             List(users, id: \.id) { user in
@@ -27,7 +29,15 @@ struct ContentView: View {
         }
         .task {
             if users.isEmpty {
-                users = await NetworkHelper.loadData() ?? []
+                do {
+                    try modelContext.delete(model: User.self)
+                    let fetchUsers = await NetworkHelper.loadData() ?? []
+                    for user in fetchUsers {
+                        modelContext.insert(user)
+                    }
+                } catch {
+                    print("error -- \(error.localizedDescription)")
+                }
             }
         }
     }

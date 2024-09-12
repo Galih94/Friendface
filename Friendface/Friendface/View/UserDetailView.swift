@@ -39,6 +39,7 @@ struct UserDetailView: View {
     }
 }
 
-#Preview {
-    UserDetailView(user: User(id: "1", isActive: true, name: "testName", age: 20, company: "testCompany", email: "test@email.com", address: "testAddress", about: "testAbout", registered: "testRegistered", tags: [], friends: []), users: [])
-}
+/// No Preview for now
+//#Preview {
+//    UserDetailView(user: User(from: Any as! Decoder), users: [])
+//}
